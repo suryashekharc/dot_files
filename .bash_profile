@@ -7,14 +7,15 @@ orange=$(tput setaf 166);
 yellow=$(tput setaf 228);
 green=$(tput setaf 71); 
 white=$(tput setaf 15); 
+blue=$(tput setaf 27);
 bold=$(tput bold); 
 reset=$(tput sgr0); 
 PS1="\[${bold}\]"; 
 PS1+="\[${orange}\]\u"; # username 
 # PS1+="\[${white}\]@"; 
-PS1+="\[${yellow}\]\$(parse_git_branch) "; # host 
+PS1+="\[${blue}\]\$(parse_git_branch) "; # host 
 PS1+="\[${green}\]\w"; # working directory 
-PS1+="\[${white}\]\$ \[${reset}\]"; # '$' (and reset color) 
+PS1+="\[${blue}\]\$ \[${reset}\]"; # '$' (and reset color) 
 export PS1; 
 
 
